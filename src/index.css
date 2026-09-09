@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Elms+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-verdec: #9ea78a;
+  --color-verdee: #3d5548;
+  --color-marrom: #b59e7e;
+  --color-marrome: #584638;
+  --color-creme: #f0e9d9;
+  --color-branco: #f9f5f2;
+  --color-preto: #000000;
+  --font-elms: 'Elms Sans', sans-serif;
+  --font-bitter: 'Bitter', serif;
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: 'Elms Sans', sans-serif;
+}
+
+p {
+  font-family: 'Bitter', serif;
+}

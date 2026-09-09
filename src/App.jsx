@@ -9,22 +9,46 @@ import Gallery from './sections/main/Gallery'
 import Location from './sections/main/Location'
 import Contact from './sections/main/Contact'
 
+import './index.css'
+
 function App() {
   return (
     <>
-      <Navbar />
+      <div className="bg-branco">
+        <Navbar />
 
-      <main>
-        <Hero />
-        <Key />
-        <Reviews />
-        <FAQ />
-        <Gallery />
-        <Location />
-        <Contact />
-      </main>
+        <main>
+          <section id="Home">
+            <Hero />
+          </section>
 
-      <Footer />
+          <section id="Key">
+            <Key />
+          </section>
+
+          <section id="Reviews">
+            <Reviews />
+          </section>
+
+          <section id="FAQ">
+            <FAQ />
+          </section>
+
+          <section id="Gallery">
+            <Gallery />
+          </section>
+
+          <section id="Location">
+            <Location />
+          </section>
+
+          <section id="Contact">
+            <Contact />
+          </section>
+        </main>
+
+        <Footer />
+      </div>
     </>
   )
 }
