@@ -1,3 +1,10 @@
+import Ig1 from '../../assets/img/ig1.jpeg'
+import Ig2 from '../../assets/img/ig2.jpeg'
+import Ig3 from '../../assets/img/ig3.jpeg'
+import Ig4 from '../../assets/img/ig4.jpeg'
+import Ig5 from '../../assets/img/ig5.jpeg'
+import Ig6 from '../../assets/img/ig6.jpeg'
+
 const Gallery = () => {
   return (
     <section className=" px-6 py-12 md:py-16">
@@ -13,46 +20,46 @@ const Gallery = () => {
 
       {/* Grid de Imagens (2 colunas no mobile, 3 colunas no desktop) */}
       <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-10 md:mb-12">
-        <div className="aspect-square rounded-2xl overflow-hidden shadow-md bg-gray-200">
+        <div className="aspect-square rounded-2xl overflow-hidden shadow-md">
           <img
-            src=""
+            src={Ig1}
             alt="Foto 1 do Studio"
-            className="w-full h-full object-cover filter grayscale contrast-125"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="aspect-square rounded-2xl overflow-hidden shadow-md bg-gray-200">
+        <div className="aspect-square rounded-2xl overflow-hidden shadow-md">
           <img
-            src=""
+            src={Ig2}
             alt="Foto 2 do Studio"
-            className="w-full h-full object-cover filter grayscale contrast-125"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="aspect-square rounded-2xl overflow-hidden shadow-md bg-gray-200">
+        <div className="aspect-square rounded-2xl overflow-hidden shadow-md">
           <img
-            src=""
+            src={Ig3}
             alt="Foto 3 do Studio"
-            className="w-full h-full object-cover filter grayscale contrast-125"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="aspect-square rounded-2xl overflow-hidden shadow-md bg-gray-200">
+        <div className="aspect-square rounded-2xl overflow-hidden shadow-md">
           <img
-            src=""
+            src={Ig4}
             alt="Foto 4 do Studio"
-            className="w-full h-full object-cover filter grayscale contrast-125"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="aspect-square rounded-2xl overflow-hidden shadow-md bg-gray-200">
+        <div className="aspect-square rounded-2xl overflow-hidden shadow-md">
           <img
-            src=""
+            src={Ig5}
             alt="Foto 5 do Studio"
-            className="w-full h-full object-cover filter grayscale contrast-125"
+            className="w-full h-full object-cover"
           />
         </div>
-        <div className="aspect-square rounded-2xl overflow-hidden shadow-md bg-gray-200">
+        <div className="aspect-square rounded-2xl overflow-hidden shadow-md">
           <img
-            src=""
+            src={Ig6}
             alt="Foto 6 do Studio"
-            className="w-full h-full object-cover filter grayscale contrast-125"
+            className="w-full h-full object-cover"
           />
         </div>
       </div>

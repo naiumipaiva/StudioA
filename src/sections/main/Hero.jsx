@@ -1,20 +1,22 @@
+import Heroimg from '../../assets/img/capa.jpeg'
+
 const Hero = () => {
   return (
     <section className="px-4 py-4 md:px-8 md:py-6 max-w-6xl mx-auto">
       <div className="relative w-full h-[450px] md:h-[550px] rounded-3xl overflow-hidden shadow-md flex flex-col justify-between p-6 md:p-10">
         {/* Imagem de fundo com filtro */}
         <img
-          src="https://images.unsplash.com/photo-1552196527-bffef41ef674?q=80&w=1326&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src={Heroimg}
           alt="imagem de pilates"
-          className="absolute inset-0 w-full h-full object-cover filter grayscale contrast-125"
+          className="absolute inset-0 w-full h-full object-cover "
         />
 
         {/* Camada opcional leve para destacar o texto se necessário (pode remover se a foto já estiver ideal) */}
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
 
         {/* Título */}
         <div className="relative z-10 max-w-lg">
-          <h1 className="text-verdec font-black text-4xl md:text-4xl leading-snug ">
+          <h1 className="text-branco font-black text-4xl md:text-4xl leading-snug ">
             Pilates que respeita a sua jornada e seu ritmo
           </h1>
         </div>

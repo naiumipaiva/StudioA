@@ -1,8 +1,12 @@
+import gestanteImg from '../../assets/img/gestante.jpeg'
+import inclusivoImg from '../../assets/img/inclusivo.jpeg'
+import idososImg from '../../assets/img/idoso.jpeg'
+import localizacaoImg from '../../assets/img/localizacao.jpeg'
+
 const keyData = [
   {
     id: 1,
-    imgSrc:
-      'https://images.unsplash.com/photo-1552196527-bffef41ef674?q=80&w=1326&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imgSrc: inclusivoImg,
     alt: 'Atendimento Inclusivo',
     title: 'Atendimento Inclusivo',
     description:
@@ -10,8 +14,7 @@ const keyData = [
   },
   {
     id: 2,
-    imgSrc:
-      'https://images.unsplash.com/photo-1552196527-bffef41ef674?q=80&w=1326&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imgSrc: gestanteImg,
     alt: 'Gestantes',
     title: 'Gestantes',
     description:
@@ -19,8 +22,7 @@ const keyData = [
   },
   {
     id: 3,
-    imgSrc:
-      'https://images.unsplash.com/photo-1552196527-bffef41ef674?q=80&w=1326&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imgSrc: idososImg,
     alt: 'Idosos',
     title: 'Idosos',
     description:
@@ -28,8 +30,7 @@ const keyData = [
   },
   {
     id: 4,
-    imgSrc:
-      'https://images.unsplash.com/photo-1552196527-bffef41ef674?q=80&w=1326&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    imgSrc: localizacaoImg,
     alt: 'Localização Prática',
     title: 'Localização Prática',
     description:
@@ -53,11 +54,11 @@ const Key = () => {
       <aside className="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
         {keyData.map((item) => (
           <div key={item.id} className="flex flex-col items-center text-center">
-            <div className="w-full max-w-[200px] sm:max-w-[220px] aspect-square rounded-2xl overflow-hidden shadow-md mb-4 bg-gray-200">
+            <div className="w-full max-w-[200px] sm:max-w-[220px] aspect-square rounded-2xl overflow-hidden shadow-md mb-4">
               <img
                 src={item.imgSrc}
                 alt={item.alt}
-                className="w-full h-full object-cover filter grayscale contrast-125"
+                className="w-full h-full object-cover "
               />
             </div>
             <h3 className="text-marrome font-extrabold text-base md:text-lg mb-2">
